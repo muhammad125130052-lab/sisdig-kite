@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Media Ajar Interaktif HTML5 Mata Kuliah Sistem Digital dengan Kurikulum 14 Minggu, Simulator Konversi Biner Sentral, Papan Register Bit, dan Kuis Mandiri." />
+  <meta name="author" content="Dr. Swadexi Istiqphara, S.T., M.T. - ITERA" />
+  <title>Sistem Digital | Media Ajar Interaktif HTML5</title>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- SIDEBAR NAVIGASI MINGGU 1 - 14 -->
+    <aside class="sidebar" id="appSidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon">
+          <i class="fas fa-microchip"></i>
+        </div>
+        <div class="brand-text">
+          <h1>SISTEM DIGITAL</h1>
+          <span>Portal Media Ajar</span>
+        </div>
+      </div>
+
+      <div class="sidebar-scroll">
+        <div class="menu-section-label">Silabus Perkuliahan (14 Minggu)</div>
+        <ul class="week-nav-list" id="weekNavList">
+          <!-- Di-generate secara dinamis oleh js/app.js -->
+        </ul>
+      </div>
+
+      <!-- WIDGET JAM & MENIT REAL-TIME (KIRI BAWAH) -->
+      <div class="bottom-clock-widget">
+        <div class="clock-live-indicator">
+          <span class="live-dot"></span>
+          <span class="live-label">Waktu Sistem</span>
+        </div>
+        <div class="clock-display-wrap">
+          <span class="clock-digits" id="bottomClockDigits">00:00:00</span>
+          <span class="clock-tz">WIB</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+    <main class="main-wrapper">
+      
+      <!-- HEADER UTAMA DENGAN TANGGAL HARI INI -->
+      <header class="main-header">
+        <div class="header-left">
+          <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Buka Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="course-meta-tag">
+            <span class="meta-title">MK Sistem Digital (INF203 / EL2102)</span>
+            <span class="meta-sub">Institut Teknologi Sumatera (ITERA) • Semester Ganjil</span>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <!-- TANGGAL REAL-TIME DI MENU UTAMA -->
+          <div class="live-date-badge" title="Tanggal Kalender Sistem Hari Ini">
+            <i class="fas fa-calendar-day"></i>
+            <span class="date-text" id="headerLiveDate">Memuat tanggal...</span>
+          </div>
+
+          <!-- DOSEN PENGAMPU -->
+          <div class="lecturer-badge" title="Dosen Pengampu: Dr. Swadexi Istiqphara, S.T., M.T. | Efa Maydhona, S.T., M.T. | Nia Saputri Utami, S.T., M.T.">
+            <i class="fas fa-user-tie"></i>
+            <span>Dr. Swadexi Istiqphara, S.T., M.T.</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONTENT CONTAINER -->
+      <div class="content-stage">
+        
+        <!-- BANNER INFO MINGGU AKTIF -->
+        <section class="week-banner" id="weekBannerContainer">
+          <!-- Diisi dinamis -->
+        </section>
+
+        <!-- SUBMENU TABS DINAMIS -->
+        <nav class="submenu-nav-container" id="submenuContainer">
+          <!-- Diisi dinamis -->
+        </nav>
+
+        <!-- STAGE UTAMA KONTEN DINAMIS -->
+        <section id="contentStage">
+          <!-- Konten materi, simulator, bitboard, atau kuis akan dimuat di sini -->
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <!-- SCRIPT LOGIC -->
+  <script src="js/data.js"></script>
+  <script src="js/converter.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
